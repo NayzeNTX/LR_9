@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25076C"
+    tools:context=".MainActivity">
+
+    <!-- Круг -->
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle1" />
+
+    <!-- Кнопка "Влево" -->
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleImageView"
+        android:layout_marginTop="16dp"
+        android:text="Влево" />
+
+    <!-- Кнопка "Вправо" -->
+
+    <!-- Кнопка "Маленький" -->
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circleImageView"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@id/left"
+        android:text="Вправо" />
+
+    <Button
+        android:id="@+id/small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/left"
+        android:layout_marginTop="16dp"
+        android:text="Маленький" />
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/right"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/small"
+        android:text="Средний" />
+
+    <Button
+        android:id="@+id/large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medium"
+        android:layout_marginLeft="-108dp"
+        android:layout_marginTop="-48dp"
+        android:layout_toRightOf="@id/right"
+        android:text="Большой" />
+
+</RelativeLayout>
